@@ -1,0 +1,140 @@
+.recomended {
+  padding-top: 172px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #232323;
+  }
+
+  &__descr {
+    margin: 0 auto 70px;
+    width: 635px;
+    font-size: 16px;
+    text-align: center;
+    color: #787878;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1392px;
+    height: 745px;
+  }
+
+  &__left {
+    overflow: hidden;
+    padding: 69px 90px 0 69px;
+    width: 596px;
+    height: 100%;
+    background-color: #fff;
+
+    &-company {
+      margin-bottom: 20px;
+      font-weight: lighter;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #121212;
+    }
+
+    &-name {
+      margin-bottom: 33px;
+      font-size: 30px;
+      text-align: center;
+      color: #121212;
+    }
+
+    &-descr {
+      margin: 0 auto 55px;
+      width: 290px;
+      font-size: 16px;
+      text-align: center;
+      color: #777;
+    }
+  }
+
+  &__right {
+    width: 784px;
+  }
+
+  &__first,
+  &__second {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 420px;
+    background-color: #232323;
+
+    &-img {
+      position: absolute;
+      left: -183px;
+      top: 0;
+
+      img {
+        max-width: none;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 140px;
+      padding-left: 247px;
+      height: 100%;
+    }
+
+    &-company {
+      margin-bottom: 20px;
+      font-weight: lighter;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    &-name {
+      margin-bottom: 33px;
+      font-size: 30px;
+      color: #fff;
+    }
+
+    &-descr {
+      margin: 0 auto;
+      font-size: 16px;
+      color: #777;
+    }
+  }
+
+  &__second {
+    height: 316px;
+    background-color: #fff;
+
+    &-img {
+      position: absolute;
+      left: auto;
+      right: -96px;
+      top: 0;
+
+      img {
+        max-width: none;
+      }
+    }
+
+    &-content {
+      padding-right: 300px;
+      padding-left: 62px;
+    }
+
+    &-company {
+      color: #121212;
+    }
+
+    &-name {
+      color: #121212;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.seo {
+  padding-top: 170px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1392px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    width: 845px;
+  }
+
+  &__first {
+    margin-bottom: 45px;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 40px;
+      color: #121212;
+    }
+
+    p {
+      font-size: 18px;
+      color: #121212;
+    }
+  }
+
+  &__second {
+    margin-bottom: 45px;
+
+    h2 {
+      margin-bottom: 30px;
+      font-weight: lighter;
+      font-size: 40px;
+      color: #121212;
+    }
+
+    p {
+      font-size: 18px;
+      color: #121212;
+    }
+  }
+
+  &__company {
+    margin-bottom: 32px;
+
+    img {
+      margin-bottom: 10px;
+    }
+
+    &-name {
+      font-size: 40px;
+      color: #121212;
+    }
+
+    &-descr {
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #777;
+    }
+
+    &-group {
+      font-size: 24px;
+      color: #121212;
+    }
+
+    &-advantages {
+      span {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #777;
+      }
+
+      ul {
+
+        li {
+          font-size: 18px;
+          color: #121212;
+        }
+      }
+    }
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #232323;
+  }
+}

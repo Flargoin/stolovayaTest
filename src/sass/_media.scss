@@ -1,0 +1,136 @@
+@include for-responsive-values {
+  .container {
+    @include responsive-value-desc("padding-left", 15, 10);
+    @include responsive-value-desc("padding-right", 15, 10);
+  }
+
+  .header {
+    &__logo {
+      @include responsive-value-desc("max-width", 222, 180);
+      @include responsive-value-desc("margin-right", 90, 20);
+    }
+
+    &__list {
+      &:first-child {
+        @include responsive-value-desc("max-width", 392.417, 200);
+      }
+
+      &:nth-child(2) {
+        @include responsive-value-desc("max-width", 609.767, 200);
+      }
+
+      &:nth-child(3) {
+        @include responsive-value-desc("max-width", 193.117, 200);
+      }
+
+      &:last-child {
+        @include responsive-value-desc("max-width", 350.7, 200);
+      }
+    }
+
+    &__nav {
+      &-link {
+        @include responsive-value-desc("font-size", 16, 12);
+      }
+    }
+
+    &__search {
+      /* @include responsive-value-desc("max-width", 882,) */
+      @include responsive-value-desc("margin-right", 49, 20);
+
+      &-select {
+        @include responsive-value-desc("font-size", 16, 14);
+        @include responsive-value-desc("padding-right", 26, 22);
+        @include responsive-value-desc("padding-left", 14, 7);
+      }
+    }
+
+    &__portal,
+    &__cart {
+      @include responsive-value-desc("max-width", 131, 118);
+      @include responsive-value-desc("font-size", 14, 12);
+      span {
+        @include responsive-value-desc("font-size", 16, 14);
+      }
+    }
+  }
+}
+
+@include big-desktop {
+  .header {
+    &__nav {
+      &-list {
+
+        &:first-child {
+          padding-right: 1%;
+          max-width: 33%;
+        }
+
+        &:nth-child(2) {
+          padding-right: 1%;
+          padding-left: 1%;
+          max-width: 46%;
+        }
+
+        &:nth-child(3) {
+          padding-left: 1%;
+          max-width: 14.5%;
+        }
+
+        &:last-child {
+          padding-left: 1%;
+          max-width: 6%;
+        }
+      }
+
+      &-phone {
+        font-size: 0;
+      }
+
+      &-email {
+        font-size: 0;
+      }
+    }
+  }
+}
+
+@include for-desktop {
+
+}
+
+@include tablet {
+  .header {
+    &__nav {
+      &-list {
+        &:nth-child(2) {
+          padding-right: 1%;
+          padding-left: 1%;
+          max-width: 47%;
+        }
+
+        &:nth-child(3) {
+          padding-left: 1%;
+          max-width: 14.5%;
+        }
+
+        &:last-child {
+          max-width: 5%;
+        }
+      }
+
+      &-email {
+        display: none;
+      }
+
+      &-phone {
+        font-size: 0;
+      }
+    }
+  }
+}
+
+@include small-tablet {
+}
+
+@include mobile {
+}

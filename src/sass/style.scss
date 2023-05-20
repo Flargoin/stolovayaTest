@@ -1,0 +1,26 @@
+/* Библиотеки и надстройки */
+@import "lib/normalize";
+@import "lib/swiper";
+
+/* Шрифты, переменные, миксины, анимации */
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "animation";
+
+/* База */
+@import "settings";
+
+/* Компоненты */
+
+/* Блоки */
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/brands";
+@import "blocks/news";
+@import "blocks/recomended";
+@import "blocks/seo";
+@import "blocks/footer";
+
+/* Медиа запросы */
+@import "media";
