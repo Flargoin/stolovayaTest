@@ -7,14 +7,12 @@
 
   &__title {
     margin-bottom: 48px;
-    font-size: 40px;
-    color: #121212;
   }
 
   &__inner {
-    margin-bottom: 57px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 57px;
   }
 
   &__left {
@@ -26,16 +24,14 @@
     }
 
     &-info {
-      margin-bottom: 19px;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 19px;
     }
 
     &-title {
       display: block;
       margin-bottom: 28px;
-      font-size: 24px;
-      color: #121212;
     }
 
     &-descr {
@@ -56,21 +52,19 @@
     }
 
     &-info {
-      margin-bottom: 5px;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 5px;
     }
 
     img {
-      width: 190px;
       margin-right: 20px;
+      width: 190px;
     }
 
     &-title {
       display: block;
       margin-bottom: 19px;
-      font-size: 24px;
-      color: #121212;
     }
 
     &-descr {
@@ -84,15 +78,15 @@
   }
 
   &__button {
-    padding: 0 40px;
     display: inline-block;
     border: 2px solid #121212;
     border-radius: 17px;
+    padding: 0 40px;
     height: 35px;
-    line-height: 30px;
     font-size: 16px;
-    color: #121212;
+    line-height: 30px;
     text-align: center;
+    color: #121212;
   }
 
   .tag {

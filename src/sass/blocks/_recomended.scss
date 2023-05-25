@@ -3,9 +3,6 @@
 
   &__title {
     margin-bottom: 30px;
-    font-size: 40px;
-    text-align: center;
-    color: #232323;
   }
 
   &__descr {
@@ -33,18 +30,12 @@
 
     &-company {
       margin-bottom: 20px;
-      font-weight: lighter;
-      font-size: 20px;
-      text-align: center;
+      font-weight: 100;
       text-transform: uppercase;
-      color: #121212;
     }
 
     &-name {
       margin-bottom: 33px;
-      font-size: 30px;
-      text-align: center;
-      color: #121212;
     }
 
     &-descr {
@@ -90,16 +81,12 @@
 
     &-company {
       margin-bottom: 20px;
-      font-weight: lighter;
-      font-size: 20px;
+      font-weight: 100;
       text-transform: uppercase;
-      color: #fff;
     }
 
     &-name {
       margin-bottom: 33px;
-      font-size: 30px;
-      color: #fff;
     }
 
     &-descr {
@@ -127,14 +114,6 @@
     &-content {
       padding-right: 300px;
       padding-left: 62px;
-    }
-
-    &-company {
-      color: #121212;
-    }
-
-    &-name {
-      color: #121212;
     }
   }
 }

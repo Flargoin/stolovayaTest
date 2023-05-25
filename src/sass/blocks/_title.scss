@@ -1,0 +1,24 @@
+.title {
+  font-size: 40px;
+  color: #121212;
+
+  &-fz20 {
+    font-size: 20px;
+  }
+
+  &-fz24 {
+    font-size: 24px;
+  }
+
+  &-fz30 {
+    font-size: 30px;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
