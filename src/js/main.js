@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".header__categories-list", {
 
     slidesPerView: 11,
-    spaceBetween: 42,
+    spaceBetween: 40,
 
     breakpoints: {
       1545: {

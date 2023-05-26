@@ -222,14 +222,13 @@
   }
 
   &__categories {
-    padding-top: 9px;
-    padding-bottom: 12px;
     box-shadow: 0 7px 18px 0 #0000001c;
     background-color: #fff;
 
     &-list {
+      padding: 8.3px 2px;
       width: 100%;
-      height: 79px;
+      min-height: 79px;
       max-width: 1545px;
     }
 
@@ -244,6 +243,11 @@
       img {
         display: block;
         margin: 0 auto;
+      }
+
+      &:focus {
+        outline: 2px solid #00aa4b;
+        border-radius: 5px;
       }
     }
 
