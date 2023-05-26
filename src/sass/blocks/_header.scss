@@ -54,7 +54,6 @@
       }
 
       &:focus {
-        outline: none;
         border-bottom: 3px solid #fff;
       }
 
@@ -84,6 +83,12 @@
     margin-right: 90px;
     width: 100%;
     max-width: 222px;
+
+    &:focus {
+      outline: 2px solid #00aa4b;
+      outline-offset: 5px;
+      border-radius: 5px;
+    }
   }
 
   &__search {
@@ -126,6 +131,19 @@
         border: 6px solid transparent;
         border-top: 6px solid #3c3c3c;
       }
+
+      &:focus {
+        outline: 1px solid #000;
+        border-radius: 5px 0 0 5px;
+      }
+
+      &:hover {
+        background-color: #f1f1f170;
+      }
+
+      &:active {
+        background-color: #f1f1f170;
+      }
     }
 
     button {
@@ -137,6 +155,19 @@
       width: 48px;
       height: 100%;
       background-color: #ffaf2d;
+
+      &:focus {
+        outline: 1px solid #000;
+        border-radius: 0 5px 5px 0;
+      }
+
+      &:hover {
+        background-color: #ffaf2d90;
+      }
+
+      &:active {
+        background-color: #ffaf2d90;
+      }
     }
   }
 
@@ -178,6 +209,16 @@
     max-width: 131px;
     font-size: 14px;
     color: #777;
+
+    img {
+      max-width: none;
+    }
+
+    &:focus {
+      outline: 2px solid #00aa4b;
+      outline-offset: 5px;
+      border-radius: 5px;
+    }
   }
 
   &__categories {
