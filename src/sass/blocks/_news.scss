@@ -16,11 +16,16 @@
   }
 
   &__left {
-    width: 491px;
+    max-width: 491px;
 
     &-image {
       display: block;
       margin-bottom: 29px;
+      width: 100%;
+
+      &:focus {
+        outline: 2px solid #00aa4b;
+      }
     }
 
     &-info {
@@ -32,6 +37,15 @@
     &-title {
       display: block;
       margin-bottom: 28px;
+
+      a {
+        display: inline-block;
+        color: inherit;
+
+        &:focus {
+          outline: 2px solid #00aa4b;
+        }
+      }
     }
 
     &-descr {
@@ -45,9 +59,16 @@
 
     &-item {
       display: flex;
+      justify-content: space-evenly;
 
       &:not(:last-child) {
         margin-bottom: 40px;
+      }
+    }
+
+    &-link {
+      &:focus {
+        outline: 2px solid #00aa4b;
       }
     }
 
@@ -58,13 +79,21 @@
     }
 
     img {
-      margin-right: 20px;
       width: 190px;
     }
 
     &-title {
       display: block;
       margin-bottom: 19px;
+
+      a {
+        display: inline-block;
+        color: inherit;
+
+        &:focus {
+          outline: 2px solid #00aa4b;
+        }
+      }
     }
 
     &-descr {
@@ -87,6 +116,19 @@
     line-height: 30px;
     text-align: center;
     color: #121212;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+      background-color: #121212;
+    }
+
+    &:active {
+      border-color: #12121240;
+      color: #fff;
+      background-color: #12121298;
+    }
   }
 
   .tag {
