@@ -84,5 +84,14 @@
     font-size: 24px;
     color: #fff;
     background-color: #232323;
+    transition: border 0.3s, color 0.3s, background-color 0.3s;
+
+    &:focus,
+    &:hover,
+    &:active {
+      border: 1px solid #232323;
+      color: #232323;
+      background-color: transparent;
+    }
   }
 }
