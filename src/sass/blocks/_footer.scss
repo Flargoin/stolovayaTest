@@ -23,10 +23,22 @@
       color: #fff;
     }
 
-    &-block a {
-      display: block;
-      font-size: 16px;
-      color: #fff;
+    &-block {
+      a {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+
+        &:focus {
+          outline: 2px solid #00aa4b;
+        }
+      }
+
+      address {
+        &:focus {
+          outline: 2px solid #00aa4b;
+        }
+      }
     }
 
     ul {
@@ -34,6 +46,14 @@
         margin-bottom: 10px;
         font-size: 16px;
         color: #fff;
+
+        a {
+          color: inherit;
+
+          &:focus {
+            outline: 2px solid #00aa4b;
+          }
+        }
       }
     }
   }
@@ -49,8 +69,19 @@
   }
 
   &__logo {
+    position: relative;
     display: flex;
     align-items: center;
+
+    a {
+      @include fullsize-link;
+
+      transition: transform 0.3s;
+
+      &:focus {
+        outline: 2px solid #00aa4b;
+      }
+    }
 
     img {
       margin-right: 18px;
@@ -65,5 +96,9 @@
   &__copyright {
     font-size: 18px;
     color: #fff;
+
+    &:focus {
+      outline: 2px solid #00aa4b;
+    }
   }
 }
