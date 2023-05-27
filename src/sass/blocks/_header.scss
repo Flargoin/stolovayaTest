@@ -1,21 +1,21 @@
 .header {
   /* header navigation */
-  --header-nav-background: #00aa4b;
-  --header-nav-border: 1px solid #40bf79;
-  --header-nav-link: #fff;
+  --header-nav-background: var(--green-color);
+  --header-nav-border: 1px solid var(--mint-color);
+  --header-nav-link: var(--white-color);
 
   /* header search */
-  --header-search-background: #e8e7e7;
-  --header-search-text: #777;
-  --header-search-button: #ffaf2d;
+  --header-search-background: var(--platinum-white-color);
+  --header-search-text: var(--platinum-gray-color);
+  --header-search-button: var(--saffron-color);
 
   /* header cart */
-  --header-cart-count: #ff8c00;
+  --header-cart-count: var(--princenton-orange-color);
 
   /* header categories */
   --header-categories-shadow: 0 7px 18px 0 #0000001c;
-  --header-categories-background: #fff;
-  --header-categories-link: #343434;
+  --header-categories-background: var(--white-color);
+  --header-categories-link: var(--granite-color);
 
   &__container {
     display: flex;

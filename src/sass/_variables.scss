@@ -5,6 +5,17 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  /* Colors */
+  --white-color: #fff;
+  --black-color: #000;
+  --green-color: #00aa4b;
+  --mint-color: #40bf79;
+  --saffron-color: #ffaf2d;
+  --princenton-orange-color: #ff8c00;
+  --platinum-gray-color: #777;
+  --platinum-white-color: #e8e7e7;
+  --granite-color: #343434;
+
   /* Transition */
   --transition-time: 0.3s; // Для всего
 
