@@ -1,6 +1,9 @@
 .title {
+  --title-color: var(--blackish-color);
+  --title-light-color: var(--white-color);
+
   font-size: 40px;
-  color: #121212;
+  color: var(--title-color);
 
   &-fz20 {
     font-size: 20px;
@@ -15,7 +18,7 @@
   }
 
   &--white {
-    color: #fff;
+    color: var(--title-light-color);
   }
 
   &--center {
