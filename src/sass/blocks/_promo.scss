@@ -1,4 +1,29 @@
 .promo {
+  /* promo menu */
+  --promo-menu-background: var(--white-color);
+  --promo-menu-title-color: var(--saffron-color);
+  --promo-menu-link-color: var(--gray-umber-color);
+  --promo-menu-link-hover-bg: var(--saffron-color);
+  --promo-menu-link-hover-color: var(--white-color);
+
+  /* promo slider */
+  --promo-slider-bg: var(--black-brown-color);
+  --promo-slider-h2: var(--platinum-gray-color);
+  --promo-slider-h3: var(--munsell-white-color);
+  --promo-slider-text: var(--munsell-white-color);
+  --promo-slider-btn-text: var(--white-color);
+  --promo-slider-btn-bg: var(--saffron-color);
+  --promo-slider-btn-hover-border: 1px solid var(--saffron-color);
+  --promo-slider-btn-hover-bg: transparent;
+  --promo-slider-btn-hover-text: var(--saffron-color);
+
+  /* promo sale */
+  --promo-sale-border: 2px solid var(--saffron-color);
+  --promo-sale-bg: var(--white-color);
+  --promo-sale-text: var(--blackish-color);
+  --promo-sale-link: var(--saffron-color);
+  --promo-sale-link-focus: 1px solid var(--saffron-color);
+
   padding-top: 23px;
   width: 100%;
 
@@ -13,13 +38,13 @@
     padding-bottom: 5px;
     width: 19.6%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--promo-menu-background);
 
     &-title {
       margin-bottom: 12px;
       padding-left: 28px;
       font-size: 24px;
-      color: #ffaf2d;
+      color: var(--promo-menu-title-color);
     }
 
     li {
@@ -36,8 +61,8 @@
       padding-left: 28px;
       height: 100%;
       font-size: 16px;
-      color: #303030;
-      transition: color 0.3s, background-color 0.3s;
+      color: var(--promo-menu-link-color);
+      transition: color var(--transition-time), background-color var(--transition-time);
 
       &::after {
         content: ">";
@@ -52,12 +77,12 @@
       &:focus,
       &:active,
       &:hover {
-        outline: 1px solid #fff;
-        color: #fff;
-        background-color: #ffaf2d;
+        outline: 1px solid var(--promo-menu-link-hover-color);
+        color: var(--promo-menu-link-hover-color);
+        background-color: var(--promo-menu-link-hover-bg);
 
         &::after {
-          color: #fff;
+          color: var(--promo-menu-link-hover-color);
         }
       }
     }
@@ -70,7 +95,7 @@
     &-item {
       padding: 56px 68px;
       width: 100%;
-      background-color: #232323;
+      background-color: var(--promo-slider-bg);
 
       &-inner {
         display: flex;
@@ -88,7 +113,7 @@
         margin-bottom: 60px;
         font-weight: 100;
         font-size: 17px;
-        color: #777;
+        color: var(--promo-slider-h2);
       }
 
       h3 {
@@ -96,14 +121,14 @@
         max-width: 426px;
         font-weight: 100;
         line-height: 43px;
-        color: #f3f1f1;
+        color: var(--promo-slider-h3);
       }
 
       p {
         margin-bottom: 67px;
         font-weight: 100;
         font-size: 19px;
-        color: #f3f1f1;
+        color: var(--promo-slider-text);
       }
 
       button {
@@ -111,16 +136,16 @@
         width: 129px;
         height: 35px;
         font-size: 18px;
-        color: #fff;
-        background-color: #ffaf2d;
-        transition: color 0.3s, background-color 0.3s, border 0.3s;
+        color: var(--promo-slider-btn-text);
+        background-color: var(--promo-slider-btn-bg);
+        transition: color var(--transition-time), background-color var(--transition-time), border var(--transition-time);
 
         &:focus,
         &:active,
         &:hover {
-          border: 1px solid #ffaf2d;
-          color: #ffaf2d;
-          background-color: transparent;
+          border: var(--promo-slider-btn-hover-border);
+          color: var(--promo-slider-btn-hover-text);
+          background-color: var(--promo-slider-btn-hover-bg);
         }
       }
     }
@@ -129,11 +154,11 @@
   &__sale {
     display: flex;
     align-items: flex-end;
-    border: 2px solid #ffaf2d;
+    border: var(--promo-sale-border);
     border-radius: 2px;
     width: 19.5%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--promo-sale-bg);
 
     &-content {
       padding: 54px 28px 50px;
@@ -145,7 +170,7 @@
 
     &-text {
       font-size: 18px;
-      color: #121212;
+      color: var(--promo-sale-text);
     }
 
     &-title {
@@ -154,10 +179,10 @@
 
     &-link {
       font-size: 18px;
-      color: #ffaf2d;
+      color: var(--promo-sale-link);
 
       &:focus {
-        outline: 1px solid #ffaf2d;
+        outline: var(--promo-sale-link-focus);
       }
     }
   }
