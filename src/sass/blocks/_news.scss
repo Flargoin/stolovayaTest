@@ -106,31 +106,6 @@
     }
   }
 
-  &__button {
-    display: inline-block;
-    border: 2px solid #121212;
-    border-radius: 17px;
-    padding: 0 40px;
-    height: 35px;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    color: #121212;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
-
-    &:focus,
-    &:hover {
-      color: #fff;
-      background-color: #121212;
-    }
-
-    &:active {
-      border-color: #12121240;
-      color: #fff;
-      background-color: #12121298;
-    }
-  }
-
   .tag {
     font-size: 16px;
     color: #00aa4b;

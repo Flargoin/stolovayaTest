@@ -11,11 +11,6 @@
   --promo-slider-h2: var(--platinum-gray-color);
   --promo-slider-h3: var(--munsell-white-color);
   --promo-slider-text: var(--munsell-white-color);
-  --promo-slider-btn-text: var(--white-color);
-  --promo-slider-btn-bg: var(--saffron-color);
-  --promo-slider-btn-hover-border: 1px solid var(--saffron-color);
-  --promo-slider-btn-hover-bg: transparent;
-  --promo-slider-btn-hover-text: var(--saffron-color);
 
   /* promo sale */
   --promo-sale-border: 2px solid var(--saffron-color);
@@ -129,24 +124,6 @@
         font-weight: 100;
         font-size: 19px;
         color: var(--promo-slider-text);
-      }
-
-      button {
-        border-radius: 17.5px;
-        width: 129px;
-        height: 35px;
-        font-size: 18px;
-        color: var(--promo-slider-btn-text);
-        background-color: var(--promo-slider-btn-bg);
-        transition: color var(--transition-time), background-color var(--transition-time), border var(--transition-time);
-
-        &:focus,
-        &:active,
-        &:hover {
-          border: var(--promo-slider-btn-hover-border);
-          color: var(--promo-slider-btn-hover-text);
-          background-color: var(--promo-slider-btn-hover-bg);
-        }
       }
     }
   }

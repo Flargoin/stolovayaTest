@@ -1,0 +1,47 @@
+.btn {
+  --btn-text: var(--white-color);
+  --btn-bg: var(--saffron-color);
+  --btn-border-radius: 17.5px;
+  --btn-hover-border: 2px solid var(--saffron-color);
+  --btn-hover-bg: transparent;
+  --btn-hover-text: var(--saffron-color);
+  --btn-dark-text: var(--blackish-color);
+  --btn-dark-border: 2px solid var(--blackish-color);
+  --btn-dark-text-hover: var(--white-color);
+  --btn-dark-bg-hover: var(--blackish-color);
+  --btn-dark-border-hover: 2px solid var(--blackish-color);
+
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: var(--btn-border-radius);
+  padding: 0 40px;
+  height: 35px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--btn-text);
+  background-color: var(--btn-bg);
+  transition: color var(--transition-time), background-color var(--transition-time), border var(--transition-time);
+
+  &:focus,
+  &:active,
+  &:hover {
+    border: var(--btn-hover-border);
+    color: var(--btn-hover-text);
+    background-color: var(--btn-hover-bg);
+  }
+
+  &--dark {
+    border: var(--btn-dark-border);
+    font-size: 16px;
+    color: var(--btn-dark-text);
+    background-color: transparent;
+
+    &:focus,
+    &:active,
+    &:hover {
+      border: var(--btn-dark-border-hover);
+      color: var(--btn-dark-text-hover);
+      background-color: var(--btn-dark-bg-hover);
+    }
+  }
+}
