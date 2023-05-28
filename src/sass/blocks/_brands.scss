@@ -1,4 +1,10 @@
 .brands {
+  --brands-bg: var(--white-color);
+  --brands-links: var(--black-brown-color);
+  --brands-border: 2px solid var(--ghost-white);
+  --brands-focus-outline: 3px solid var(--green-color);
+  --brands-focus-outline-offset: 28px;
+
   padding-top: 20px;
 
   &__list {
@@ -7,7 +13,7 @@
     justify-content: space-between;
     padding: 15px 0;
     height: 102px;
-    background-color: #fff;
+    background-color: var(--brands-bg);
 
     li {
       display: flex;
@@ -18,16 +24,16 @@
 
       a {
         font-size: 18px;
-        color: #232323;
+        color: var(--brands-links);
 
         &:focus {
-          outline: 3px solid #00aa4b;
-          outline-offset: 28px;
+          outline: var(--brands-focus-outline);
+          outline-offset: var(--brands-focus-outline-offset);
         }
       }
 
       &:not(:last-child) {
-        border-right: 2px solid #f8f8f8;
+        border-right: var(--brands-border);
       }
     }
   }
