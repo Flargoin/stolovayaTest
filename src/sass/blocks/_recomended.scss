@@ -1,4 +1,9 @@
 .recomended {
+  --recomended-descr: #787878;
+  --recomended-item-dark-bg: var(--black-brown-color);
+  --recomended-item-light-bg: var(--white-color);
+  --recomended-item-text: var(--platinum-gray-color);
+
   padding-top: 172px;
 
   &__title {
@@ -10,7 +15,7 @@
     width: 635px;
     font-size: 16px;
     text-align: center;
-    color: #787878;
+    color: var(--recomended-descr);
   }
 
   &__inner {
@@ -27,8 +32,8 @@
     padding: 69px 90px 0 69px;
     width: 596px;
     height: 100%;
-    background-color: #fff;
-    transition: transform 0.3s;
+    background-color: var(--recomended-item-light-bg);
+    transition: transform var(--transition-time);
 
     &-company {
       margin-bottom: 20px;
@@ -45,13 +50,13 @@
       width: 290px;
       font-size: 16px;
       text-align: center;
-      color: #777;
+      color: var(--recomended-item-text);
     }
 
     &-img {
       @include fullsize-link;
 
-      transition: transform 0.3s;
+      transition: transform var(--transition-time);
 
       &:focus {
         transform: scale(1.05);
@@ -76,12 +81,12 @@
     margin-bottom: 10px;
     width: 100%;
     height: 420px;
-    background-color: #232323;
-    transition: transform 0.3s;
+    background-color: var(--recomended-item-dark-bg);
+    transition: transform var(--transition-time);
 
     &-img {
       margin-left: -183px;
-      transition: transform 0.3s;
+      transition: transform var(--transition-time);
 
       img {
         max-width: none;
@@ -115,7 +120,7 @@
     &-descr {
       margin: 0 auto;
       font-size: 16px;
-      color: #777;
+      color: var(--recomended-item-text);
     }
 
     &:focus {
@@ -129,7 +134,7 @@
 
   &__second {
     height: 316px;
-    background-color: #fff;
+    background-color: var(--recomended-item-light-bg);
 
     &-img {
       margin-top: 80px;
