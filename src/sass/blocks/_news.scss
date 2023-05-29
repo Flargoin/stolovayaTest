@@ -1,4 +1,8 @@
 .news {
+  --news-text: var(--blackish-color);
+  --news-tab: var(--green-tab);
+  --news-date: var(--platinum-gray-color);
+
   padding-top: 163px;
 
   &__container {
@@ -50,7 +54,7 @@
 
     &-descr {
       font-size: 16px;
-      color: #121212;
+      color: var(--news-text);
     }
   }
 
@@ -98,7 +102,7 @@
 
     &-descr {
       font-size: 16px;
-      color: #121212;
+      color: var(--news-text);
     }
 
     &-content {
@@ -108,11 +112,11 @@
 
   .tag {
     font-size: 16px;
-    color: #00aa4b;
+    color: var(--news-tab);
   }
 
   .data {
     font-size: 16px;
-    color: #777;
+    color: var(--news-date);
   }
 }
