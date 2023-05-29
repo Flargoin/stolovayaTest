@@ -1,6 +1,15 @@
 .footer {
+  /* footer top */
+  --footer-top-bg: var(--black-brown-color);
+  --footer-list-title: var(--platinum-gray-color);
+  --footer-link-color: var(--white-color);
+
+  /* footer bottom */
+  --footer-bottom-bg: var(--blue-black-color);
+  --footer-copyright: var(--white-color);
+
   margin-top: 172px;
-  background-color: #232323;
+  background-color: var(--footer-top-bg);
 
   &__container {
     display: flex;
@@ -14,18 +23,18 @@
   &__list {
     &-title {
       margin-bottom: 37px;
-      color: #777;
+      color: var(--footer-list-title);
     }
 
     &-block {
       margin-bottom: 25px;
       font-size: 16px;
-      color: #fff;
+      color: var(--footer-link-color);
 
       a {
         display: block;
         font-size: 16px;
-        color: #fff;
+        color: var(--footer-link-color);
 
         &:focus {
           outline: 2px solid #00aa4b;
@@ -43,7 +52,7 @@
       li {
         margin-bottom: 10px;
         font-size: 16px;
-        color: #fff;
+        color: var(--footer-link-color);
 
         a {
           color: inherit;
@@ -59,7 +68,7 @@
   &__bottom {
     padding-top: 42px;
     padding-bottom: 30px;
-    background-color: #191919;
+    background-color: var(--footer-bottom-bg);
 
     .footer__container {
       align-items: center;
@@ -93,7 +102,7 @@
 
   &__copyright {
     font-size: 18px;
-    color: #fff;
+    color: var(--footer-copyright);
 
     &:focus {
       outline: 2px solid #00aa4b;
