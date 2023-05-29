@@ -1,4 +1,13 @@
 .seo {
+  --seo-dark-text: var(--blackish-color);
+  --seo-company-descr: var(--platinum-gray-color);
+  --seo-advantages: var(--platinum-gray-color);
+  --seo-btn-bg: var(--black-brown-color);
+  --seo-btn-plus: var(--white-color);
+  --seo-btn-bg-hover: transparent;
+  --seo-btn-plus-hover: var(--black-brown-color);
+  --seo-btn-border-hover: 1px solid var(--black-brown-color);
+
   padding-top: 170px;
 
   &__container {
@@ -22,7 +31,7 @@
 
     p {
       font-size: 18px;
-      color: #121212;
+      color: var(--seo-dark-text);
     }
   }
 
@@ -36,7 +45,7 @@
 
     p {
       font-size: 18px;
-      color: #121212;
+      color: var(--seo-dark-text);
     }
   }
 
@@ -50,7 +59,7 @@
     &-descr {
       margin-bottom: 30px;
       font-size: 16px;
-      color: #777;
+      color: var(--seo-company-descr);
     }
 
     &-group {
@@ -62,13 +71,13 @@
         display: inline-block;
         margin-bottom: 20px;
         font-size: 18px;
-        color: #777;
+        color: var(--seo-advantages);
       }
 
       ul {
         li {
           font-size: 18px;
-          color: #121212;
+          color: var(--seo-dark-text);
         }
       }
     }
@@ -82,16 +91,16 @@
     width: 50px;
     height: 50px;
     font-size: 24px;
-    color: #fff;
-    background-color: #232323;
-    transition: border 0.3s, color 0.3s, background-color 0.3s;
+    color: var(--seo-btn-plus);
+    background-color: var(--seo-btn-bg);
+    transition: border var(--transition-time), color var(--transition-time), background-color var(--transition-time);
 
     &:focus,
     &:hover,
     &:active {
-      border: 1px solid #232323;
-      color: #232323;
-      background-color: transparent;
+      border: var(--seo-btn-border-hover);
+      color: var(--seo-btn-plus-hover);
+      background-color: var(--seo-btn-bg-hover);
     }
   }
 }
