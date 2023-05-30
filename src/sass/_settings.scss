@@ -14,8 +14,8 @@ body {
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: #f4f2f2;
+  font-family: var(--main-font);
+  background-color: var(--main-bg);
 }
 
 .wrapper {
@@ -60,10 +60,6 @@ button {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-svg {
-  fill: transparent;
 }
 
 input {

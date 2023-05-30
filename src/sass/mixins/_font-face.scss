@@ -1,14 +1,14 @@
 /* stylelint-disable */
-@mixin font-face($font-family, $url, $weight, $style) {
+@mixin font-face($font-family, $dir, $name, $weight, $style) {
   @font-face {
     font-family: "#{$font-family}";
-    src: url("#{$url}.eot");
+    src: url("./fonts/#{$dir}/#{$name}.eot");
     src: local("./fonts"),
-      local("Myriad Pro"),
-      url("./fonts/#{$url}.eot?#iefix") format("embedded-opentype"),
-      url("./fonts/#{$url}.woff2") format("woff2"),
-      url("./fonts/#{$url}.woff") format("woff"),
-      url("./fonts/#{$url}.ttf") format("truetype");
+      local(#{$font-family}),
+      url("./fonts/#{$dir}/#{$name}.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/#{$dir}/#{$name}.woff2") format("woff2"),
+      url("./fonts/#{$dir}/#{$name}.woff") format("woff"),
+      url("./fonts/#{$dir}/#{$name}.ttf") format("truetype");
     font-weight: #{$weight};
     font-style: $style;
     font-display: swap;

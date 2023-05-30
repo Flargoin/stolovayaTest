@@ -1,9 +1,11 @@
 :root {
   /*  Base */
-  --font-family: "Myriad Pro", sans-serif;
+  --main-font: "Myriad Pro";
+  --second-font: "MyriadPro LightSemiExt";
   --content-width: 1545px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --main-bg: #f4f2f2;
 
   /* Colors */
   --white-color: #fff;

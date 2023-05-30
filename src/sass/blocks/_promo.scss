@@ -19,7 +19,7 @@
   --promo-sale-link: var(--saffron-color);
   --promo-sale-link-focus: 1px solid var(--saffron-color);
 
-  padding-top: 23px;
+  padding-top: 21px;
   width: 100%;
 
   &__container {
@@ -30,14 +30,13 @@
 
   &__menu {
     padding-top: 28px;
-    padding-bottom: 5px;
     width: 19.6%;
     height: 100%;
     background-color: var(--promo-menu-background);
 
     &-title {
       margin-bottom: 12px;
-      padding-left: 28px;
+      padding-left: 25px;
       font-size: 24px;
       color: var(--promo-menu-title-color);
     }
@@ -53,8 +52,9 @@
       display: block;
       padding-top: 13.5px;
       padding-bottom: 12px;
-      padding-left: 28px;
+      padding-left: 25px;
       height: 100%;
+      font-family: var(--second-font);
       font-size: 16px;
       color: var(--promo-menu-link-color);
       transition: color var(--transition-time), background-color var(--transition-time);
@@ -105,24 +105,25 @@
       }
 
       h2 {
-        margin-bottom: 60px;
-        font-weight: 100;
-        font-size: 17px;
+        margin-bottom: 63px;
+        font-family: var(--second-font);
+        font-size: 15px;
         color: var(--promo-slider-h2);
       }
 
       h3 {
-        margin-bottom: 14px;
+        margin-bottom: 17px;
         max-width: 426px;
-        font-weight: 100;
+        font-family: var(--main-font);
+        font-weight: 400;
         line-height: 43px;
         color: var(--promo-slider-h3);
       }
 
       p {
-        margin-bottom: 67px;
-        font-weight: 100;
-        font-size: 19px;
+        margin-bottom: 66px;
+        font-family: var(--second-font);
+        font-size: 18px;
         color: var(--promo-slider-text);
       }
     }
@@ -146,15 +147,18 @@
     }
 
     &-text {
+      font-family: var(--second-font);
       font-size: 18px;
       color: var(--promo-sale-text);
     }
 
     &-title {
-      margin-bottom: 20px;
+      margin-bottom: 17px;
+      font-family: var(--main-font);
     }
 
     &-link {
+      font-family: var(--second-font);
       font-size: 18px;
       color: var(--promo-sale-link);
 
