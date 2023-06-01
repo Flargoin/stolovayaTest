@@ -19,24 +19,26 @@
   --promo-sale-link: var(--saffron-color);
   --promo-sale-link-focus: 1px solid var(--saffron-color);
 
-  padding-top: 21px;
+  padding-top: 22px;
   width: 100%;
 
   &__container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 476px;
   }
 
   &__menu {
     padding-top: 28px;
-    width: 19.6%;
+    width: 19.4%;
     height: 100%;
     background-color: var(--promo-menu-background);
 
     &-title {
       margin-bottom: 12px;
-      padding-left: 25px;
+      padding-left: 26px;
       font-size: 24px;
       color: var(--promo-menu-title-color);
     }
@@ -52,7 +54,7 @@
       display: block;
       padding-top: 13.5px;
       padding-bottom: 12px;
-      padding-left: 25px;
+      padding-left: 26px;
       height: 100%;
       font-family: var(--second-font);
       font-size: 16px;
@@ -84,11 +86,12 @@
   }
 
   &__slider {
-    width: 58.6%;
+    margin: 0 20px;
+    width: 57.85%;
     height: 100%;
 
     &-item {
-      padding: 56px 68px;
+      padding: 57px 68px;
       width: 100%;
       background-color: var(--promo-slider-bg);
 
@@ -96,7 +99,7 @@
         display: flex;
 
         div:first-child {
-          margin-right: 70px;
+          margin-right: 64px;
         }
 
         div:last-child {
@@ -134,7 +137,7 @@
     align-items: flex-end;
     border: var(--promo-sale-border);
     border-radius: 2px;
-    width: 19.5%;
+    width: 19.2%;
     height: 100%;
     background-color: var(--promo-sale-bg);
 

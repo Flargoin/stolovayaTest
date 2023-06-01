@@ -20,6 +20,7 @@
   &__container {
     display: flex;
     align-items: center;
+    padding: 0 7px;
     height: 100%;
   }
 
@@ -67,10 +68,6 @@
       color: var(--header-nav-link);
       transition: color var(--transition-time), opacity var(--transition-time);
 
-      img {
-        margin-right: 3px;
-      }
-
       &:focus {
         border-bottom: 3px solid #fff;
       }
@@ -88,6 +85,18 @@
         color: #ffffff90;
       }
     }
+
+    &-phone {
+      img {
+        margin-right: 1px;
+      }
+    }
+
+    &-email {
+      img {
+        margin-right: 3px;
+      }
+    }
   }
 
   &__center {
@@ -98,7 +107,7 @@
   &__logo {
     display: block;
     margin-top: 3px;
-    margin-right: 90px;
+    margin-right: 85px;
     width: 100%;
     max-width: 222px;
 
@@ -112,11 +121,11 @@
   &__search {
     display: flex;
     align-items: center;
-    margin-right: 49px;
+    margin-right: 50px;
     border-radius: 5px;
     width: 100%;
     height: 34px;
-    max-width: 882px;
+    max-width: 876px;
 
     &-input {
       outline: none;
@@ -128,14 +137,14 @@
 
     &-select {
       position: relative;
-      margin-right: 1px;
       border-radius: 5px 0 0 5px;
-      padding-right: 26px;
-      padding-left: 14px;
-      width: 63px;
+      padding-right: 22px;
+      padding-left: 15px;
+      width: 100%;
       height: 100%;
+      max-width: 65px;
       font-size: 16px;
-      line-height: 35px;
+      line-height: 33px;
       color: var(--header-search-text);
       background-color: #f1f1f1;
       cursor: pointer;
@@ -144,10 +153,10 @@
       &::after {
         content: "";
         position: absolute;
-        right: 8px;
-        top: 15px;
-        border: 6px solid transparent;
-        border-top: 6px solid #3c3c3c;
+        right: 9px;
+        top: 16px;
+        border: 5px solid transparent;
+        border-top: 5px solid #3c3c3c;
       }
 
       &:focus {
@@ -170,8 +179,9 @@
       justify-content: center;
       border: none;
       border-radius: 0 5px 5px 0;
-      width: 48px;
+      width: 100%;
       height: 100%;
+      max-width: 48px;
       background-color: var(--header-search-button);
 
       &:focus {
@@ -189,8 +199,15 @@
     }
   }
 
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+
   &__portal {
-    margin-right: 40px;
+    max-width: 135px;
 
     img {
       margin-right: 5px;
@@ -198,6 +215,8 @@
   }
 
   &__cart {
+    max-width: 128px;
+
     &-img {
       position: relative;
       margin-top: 9px;
@@ -214,6 +233,7 @@
 
     &-price {
       display: block;
+      font-family: var(--main-font);
       font-size: 16px;
       color: #000;
     }
@@ -224,7 +244,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 131px;
     font-family: var(--second-font);
     font-size: 14px;
     color: var(--header-search-text);
@@ -245,7 +264,7 @@
     background-color: var(--header-categories-background);
 
     &-list {
-      padding: 8.3px 2px;
+      padding: 8px 2px;
       width: 100%;
       min-height: 79px;
       max-width: 1545px;
