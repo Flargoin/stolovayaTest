@@ -35,7 +35,6 @@
     }
 
     &__search {
-      /* @include responsive-value-desc("max-width", 882,) */
       @include responsive-value-desc("margin-right", 49, 20);
 
       &-select {
@@ -49,6 +48,7 @@
     &__cart {
       @include responsive-value-desc("max-width", 131, 118);
       @include responsive-value-desc("font-size", 14, 12);
+
       span {
         @include responsive-value-desc("font-size", 16, 14);
       }

@@ -90,5 +90,5 @@ input {
 
 .container {
   margin: 0 auto;
-  max-width: 1545px;
+  max-width: var(--content-width);
 }

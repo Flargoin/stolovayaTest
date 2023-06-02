@@ -1,5 +1,5 @@
 .btn {
-  --btn-text: var(--white-color);
+  --btn-color: var(--white-color);
   --btn-bg: var(--saffron-color);
   --btn-border-radius: 17.5px;
   --btn-hover-border: 2px solid var(--saffron-color);
@@ -14,11 +14,11 @@
   display: inline-block;
   border: 2px solid transparent;
   border-radius: var(--btn-border-radius);
-  padding: 0 18.2px;
+  padding: 0 18px;
   height: 35px;
-  font-size: 18px;
-  line-height: 30px;
-  color: var(--btn-text);
+  font-size: var(--second-text-fz);
+  line-height: 155%;
+  color: var(--btn-color);
   background-color: var(--btn-bg);
   transition: color var(--transition-time), background-color var(--transition-time), border var(--transition-time);
 
@@ -32,7 +32,7 @@
 
   &--dark {
     border: var(--btn-dark-border);
-    font-size: 16px;
+    font-size: var(--main-text-fz);
     color: var(--btn-dark-text);
     background-color: transparent;
 
@@ -43,5 +43,9 @@
       color: var(--btn-dark-text-hover);
       background-color: var(--btn-dark-bg-hover);
     }
+  }
+
+  &--lg {
+    padding: 0 40px;
   }
 }
